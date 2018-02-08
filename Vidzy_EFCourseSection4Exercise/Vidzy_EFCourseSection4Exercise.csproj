@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,11 +49,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Genre.cs" />
+    <Compile Include="MercuryContext.cs" />
+    <Compile Include="Migrations\201802081803077_InitialModel.cs" />
+    <Compile Include="Migrations\201802081803077_InitialModel.Designer.cs">
+      <DependentUpon>201802081803077_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802081807346_ChangedMyPropertyColumnForReleaseDateColumnInVideosTable.cs" />
+    <Compile Include="Migrations\201802081807346_ChangedMyPropertyColumnForReleaseDateColumnInVideosTable.Designer.cs">
+      <DependentUpon>201802081807346_ChangedMyPropertyColumnForReleaseDateColumnInVideosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802081812155_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\201802081812155_PopulateGenresTable.Designer.cs">
+      <DependentUpon>201802081812155_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802081820481_ChangesGenresToGenreInVideosTable.cs" />
+    <Compile Include="Migrations\201802081820481_ChangesGenresToGenreInVideosTable.Designer.cs">
+      <DependentUpon>201802081820481_ChangesGenresToGenreInVideosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802081826010_AddClassificationColumnInVideosTable.cs" />
+    <Compile Include="Migrations\201802081826010_AddClassificationColumnInVideosTable.Designer.cs">
+      <DependentUpon>201802081826010_AddClassificationColumnInVideosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Video.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802081803077_InitialModel.resx">
+      <DependentUpon>201802081803077_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802081807346_ChangedMyPropertyColumnForReleaseDateColumnInVideosTable.resx">
+      <DependentUpon>201802081807346_ChangedMyPropertyColumnForReleaseDateColumnInVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802081812155_PopulateGenresTable.resx">
+      <DependentUpon>201802081812155_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802081820481_ChangesGenresToGenreInVideosTable.resx">
+      <DependentUpon>201802081820481_ChangesGenresToGenreInVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802081826010_AddClassificationColumnInVideosTable.resx">
+      <DependentUpon>201802081826010_AddClassificationColumnInVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

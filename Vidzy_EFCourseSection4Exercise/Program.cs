@@ -10,6 +10,12 @@ namespace Vidzy_EFCourseSection4Exercise
     {
         static void Main(string[] args)
         {
+            var context = new MercuryContext();
+
+            foreach( var video in context.Videos)
+            {
+                Console.WriteLine();
+            }
         }
     }
 }
