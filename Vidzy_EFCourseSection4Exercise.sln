@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidzy_EFCourseSection4Exercise", "Vidzy_EFCourseSection4Exercise\Vidzy_EFCourseSection4Exercise.csproj", "{D67C8B9F-C259-4833-A25F-2042D296A5C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D67C8B9F-C259-4833-A25F-2042D296A5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67C8B9F-C259-4833-A25F-2042D296A5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67C8B9F-C259-4833-A25F-2042D296A5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D67C8B9F-C259-4833-A25F-2042D296A5C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F073D0FA-CF73-407F-A442-C2D3A47E973E}
+	EndGlobalSection
+EndGlobal
